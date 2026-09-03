@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0E1116; font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: {{accent}}; } a:hover { color: #E8ECF2; }
+    * { box-sizing: border-box; }
+  </style>
+</helmet>
+<div translate="no" style="width: 1440px; height: 900px; background: #0E1116; color: #E8ECF2; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+  
+<div style="height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid #2A3140; background: #0E1116;">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 30px; height: 30px; border-radius: 8px; background: {{accent}}; display: flex; align-items: center; justify-content: center;">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path d="M7 5v14l11-7z" fill="#0E1116"/></svg>
+    </div>
+    <span style="font-size: 18px; font-weight: 700; letter-spacing: -0.01em; color: #E8ECF2;">BinStaGram</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px;">
+    <div style="width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #9AA5B5;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></div>
+    <div style="width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #9AA5B5;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+    <div style="width: 36px; height: 36px; border-radius: 50%; background: #1B2740; color: #7FA7FF; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center;">h</div>
+  </div>
+</div>
+  <div style="flex: 1 1 auto; display: flex; min-height: 0;">
+    
+<aside style="width: 232px; flex: 0 0 auto; background: #12161D; border-right: 1px solid #2A3140; padding: 16px 12px; display: flex; flex-direction: column; gap: 2px;">
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M9 6h12M9 12h12M9 18h12"/><path d="M3.5 5.5L4.5 5v3M3.5 12.5h2l-2 2.5h2M3.5 17h1.5a1 1 0 0 1 0 2H4.5a1 1 0 0 1 0 2H3.5"/></svg></span>
+  <span style="flex: 1 1 auto;">순서</span>
+</div>
+  <div style="font-size: 11.5px; color: #66718A; padding: 0 12px; margin: 18px 0 6px; letter-spacing: 0.02em;">제작 도구</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; background: #1E2430; color: #E8ECF2; font-weight: 600; box-shadow: inset 0 0 0 1px #343C4D;">
+  <span style="display: flex; color: {{accent}};"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span>
+  <span style="flex: 1 1 auto;">링크로 찾기</span>
+</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/><path d="M7 12h6M7 15h4"/></svg></span>
+  <span style="flex: 1 1 auto;">레퍼런스 대본 확보</span>
+</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 7h11l-3-3M20 17H9l3 3"/><path d="M4 7v2a3 3 0 0 0 3 3h2M20 17v-2a3 3 0 0 0-3-3h-2"/></svg></span>
+  <span style="flex: 1 1 auto;">레퍼런스 대본 변환</span>
+</div>
+</aside>
+    
+<main style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: center; padding: 24px;">
+  <div style="width: 880px; display: flex; flex-direction: column; gap: 14px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between;"><h1 style="margin: 0; font-size: 22px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em;">링크로 찾기</h1><span style="font-size: 12.5px; color: #66718A;">가져온 대본 1</span></div>
+    
+<div style="display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 8px 0 18px; border-radius: 16px; background: #171C25; border: 1.5px solid #343C4D; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+  <span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1.5 1.5"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1.5-1.5"/></svg></span>
+  <span style="flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; color: #66718A;">https:// 영상 링크를 붙여넣으세요 — 인스타그램 · 유튜브 · 틱톡</span>
+  <span style="display: flex; align-items: center; gap: 6px; height: 38px; padding: 0 16px; border-radius: 11px; font-size: 14px; font-weight: 700; white-space: nowrap; background: #252C3A; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>대본 가져오기</span>
+</div>
+    
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 14px; border-radius: 10px; background: #171C25; border: 1px solid #2A3140; font-size: 13.5px; color: #E8ECF2;"><span style="color: #66718A; font-size: 12.5px;">조회수</span><span style="font-weight: 500;">100만 이상</span><span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 9l6 6 6-6"/></svg></span></div>
+  <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 14px; border-radius: 10px; background: #171C25; border: 1px solid #2A3140; font-size: 13.5px; color: #E8ECF2;"><span style="color: #66718A; font-size: 12.5px;">댓글</span><span style="font-weight: 500;">500 ~ 1,000개</span><span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 9l6 6 6-6"/></svg></span></div>
+  <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 14px; border-radius: 10px; background: #171C25; border: 1px solid #2A3140; font-size: 13.5px; color: #E8ECF2;"><span style="color: #66718A; font-size: 12.5px;">기간</span><span style="font-weight: 500;">전체 기간</span><span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 9l6 6 6-6"/></svg></span></div>
+</div>
+    
+<div style="border: 1px solid #2A3140; border-radius: 16px; padding: 14px 16px 16px; background: #171C25; display: flex; flex-direction: column; gap: 12px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12.5px; color: #9AA5B5;">
+    <span style="display: flex; gap: 10px; align-items: center;"><span style="font-weight: 600; color: #E8ECF2;">instagram.com/reel/DPxQ7abcDEF</span><span style="font-weight: 600; color: #6CCB9A;">완료</span></span>
+    <span style="color: #66718A;">82s · 16문장 · English → 한국어 번역 · 화자 1명</span>
+  </div>
+  <div style="display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 14px;">
+    <div style="position: relative; height: 444px; border-radius: 14px; overflow: hidden; background: linear-gradient(160deg, #22303C 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+      <div style="position: absolute; left: 12px; right: 12px; bottom: 48px; display: flex; justify-content: center;">
+        <span style="text-align: center; background: rgba(0,0,0,0.72); color: #FFFFFF; padding: 7px 12px; border-radius: 8px; font-size: 13.5px; font-weight: 600; line-height: 1.45; display: flex; flex-direction: column; gap: 2px;"><span>So I opened Claude Cowork and typed one sentence.</span><span style="font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.8);">그래서 클로드 코워크를 열고 한 문장을 입력했어요.</span></span>
+      </div>
+      <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 34px; background: rgba(0,0,0,0.5); display: flex; align-items: center; gap: 10px; padding: 0 12px; font-size: 11px; color: #9AA5B5;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg><span style="flex: 1 1 auto; height: 3px; background: rgba(255,255,255,0.2); border-radius: 2px; overflow: hidden;"><span style="display: block; width: 20%; height: 100%; background: #FFFFFF;"></span></span><span style="font-variant-numeric: tabular-nums;">0:16 / 1:22</span></div>
+    </div>
+    <div style="border-radius: 12px; background: #1E2430; border: 1px solid #2A3140; padding: 8px 12px 10px; display: flex; flex-direction: column; gap: 1px; min-width: 0;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 2px 6px 6px;"><span style="font-size: 11px; color: {{accent}}; font-weight: 600;">목업 예시 — 고정 문장 (실제 대본은 Whisper API 연결 후)</span><span style="font-size: 11px; color: #66718A;">문장 클릭 = 그 구간으로</span></div>
+      <div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:00.0</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>Can you build a good app with zero money?</span><span style="font-size: 12px; opacity: 0.85;">돈 한 푼 없이도 좋은 앱을 만들 수 있을까요?</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:05.1</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>Everyone told me I needed a developer first.</span><span style="font-size: 12px; opacity: 0.85;">다들 개발자부터 구해야 한다고 했어요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:10.3</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>I had no budget, no team, just an idea.</span><span style="font-size: 12px; opacity: 0.85;">예산도 팀도 없이 아이디어 하나뿐이었죠.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; background: #252C3A; color: #E8ECF2;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:15.4</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>So I opened Claude Cowork and typed one sentence.</span><span style="font-size: 12px; opacity: 0.85;">그래서 클로드 코워크를 열고 한 문장을 입력했어요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:20.5</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>Describe the app like you're texting a friend.</span><span style="font-size: 12px; opacity: 0.85;">친구한테 문자 보내듯 앱을 설명하세요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:25.6</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>Twenty minutes later it was running on my phone.</span><span style="font-size: 12px; opacity: 0.85;">20분 뒤엔 제 폰에서 돌아가고 있었어요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:30.8</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>Here's the part nobody shows you.</span><span style="font-size: 12px; opacity: 0.85;">아무도 안 보여주는 부분이 여기예요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:35.9</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>The first version was ugly and broken.</span><span style="font-size: 12px; opacity: 0.85;">첫 버전은 못생기고 자꾸 멈췄어요.</span></span></div><div style="display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 5px 6px; border-radius: 6px; font-size: 13px; line-height: 1.45; color: #66718A;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #66718A; padding-top: 2px;">0:41.0</span><span style="display: flex; flex-direction: column; gap: 1px;"><span>I fixed it by asking one question at a time.</span><span style="font-size: 12px; opacity: 0.85;">한 번에 질문 하나씩 던지면서 고쳤어요.</span></span></div>
+      <div style="font-size: 11.5px; color: #66718A; padding: 4px 6px;">… 7줄 더</div>
+    </div>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+    <div style="font-size: 12.5px; color: #66718A; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">이 대본으로 바로 「레퍼런스 대본 변환」에 넘길 수 있어요</div>
+    <div style="display: flex; gap: 8px; flex: 0 0 auto;">
+      <span style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2; white-space: nowrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M15 7l-6.5 6.5a2.5 2.5 0 0 0 3.5 3.5L19 10a5 5 0 0 0-7-7L5 10"/></svg>복사 (글만)</span><span style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2; white-space: nowrap;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>SRT 저장</span><span style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2; white-space: nowrap;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 7h11l-3-3M20 17H9l3 3"/><path d="M4 7v2a3 3 0 0 0 3 3h2M20 17v-2a3 3 0 0 0-3-3h-2"/></svg>변환으로 보내기</span><span style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2; white-space: nowrap;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg>다시 가져오기</span>
+    </div>
+  </div>
+</div>
+  </div>
+</main>
+  </div>
+  
+<div style="position: absolute; right: 28px; bottom: 28px; width: 52px; height: 52px; border-radius: 50%; background: {{accent}}; color: #0E1116; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.35);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z"/></svg></div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#E9B25B","options":["#E9B25B","#5EE0B8","#7FA7FF","#F26D7D"],"section":"브랜드"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#E9B25B' };
+  }
+}
+</script>
+</body>
+</html>

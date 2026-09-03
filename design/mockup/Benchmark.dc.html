@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0E1116; font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #E9B25B; } a:hover { color: #E8ECF2; }
+    * { box-sizing: border-box; }
+  </style>
+</helmet>
+<div translate="no" style="width: 1440px; height: 900px; background: #0E1116; color: #E8ECF2; padding: 28px 36px; display: flex; flex-direction: column; gap: 18px; overflow: hidden;">
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 6px; max-width: 760px;">
+      <div style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; color: #E9B25B; text-transform: uppercase;">Reference Script Tool · 벤치마킹 리포트 · 2026-09-02</div>
+      <div style="font-size: 24px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em; line-height: 1.3;">훅AI vs 빈스타그램 — 같은 영상, 같은 요청으로 붙여본 결과</div>
+      <div style="font-size: 13px; color: #9AA5B5; line-height: 1.6;">82초 영어 릴스(“돈 없이도 좋은 앱을 만들 수 있을까?”)를 두 도구에 동시에 입력 → “이 구조를 따라 <b style="color: #E8ECF2;">AI로 릴스 대본 쉽게 만드는 법</b>을 알려주는 새 대본을 써줘” → 속도 · 정확도 · 완성도 비교. 결과는 오른쪽 <b style="color: #E8ECF2;">설계 반영표</b>로 정리해 이 목업 v3에 넣었습니다.</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, 250px); gap: 10px; flex: 0 0 auto;">
+      <div style="border: 1px solid #2A3140; border-radius: 12px; background: #171C25; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 13.5px; font-weight: 700; color: #E9B25B;">훅AI</span><span style="font-size: 11px; color: #66718A;">hookai.kr · “척척 요리사”</span></div>
+        <div style="font-size: 12px; color: #9AA5B5; line-height: 1.5;">영상 하나로 대본 3개 · 문장이 자연스러움 / 느리고 근거 과정이 안 보임(블랙박스)</div>
+      </div>
+      <div style="border: 1px solid #2A3140; border-radius: 12px; background: #171C25; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 13.5px; font-weight: 700; color: #7FA7FF;">빈스타그램</span><span style="font-size: 11px; color: #66718A;">로컬 · 자체 개발 중 · “꼼꼼 선생님”</span></div>
+        <div style="font-size: 12px; color: #9AA5B5; line-height: 1.5;">문장별 타임스탬프 · 번역 · 근거 표 / 대본 1개뿐이고 톤이 딱딱함</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: 800px minmax(0, 1fr); gap: 20px;">
+    <div style="display: flex; flex-direction: column; gap: 14px; min-width: 0;">
+      <div style="border: 1px solid #2A3140; border-radius: 14px; background: #171C25; overflow: hidden;">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 10px;"><div style="font-size: 15px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em;">5라운드 결과</div><span style="font-size: 11.5px; color: #66718A;">실험 조건 한계: 훅AI엔 새 주제를 따로 지정하지 않아 완전히 동일 조건은 아님</span></div>
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <th style="padding: 7px 12px; text-align: left; font-size: 11px; font-weight: 600; color: #66718A; background: #1E2430; width: 130px;">라운드</th>
+            <th style="padding: 7px 12px; text-align: left; font-size: 11px; font-weight: 700; color: #E9B25B; background: #1E2430;">훅AI</th>
+            <th style="padding: 7px 12px; text-align: left; font-size: 11px; font-weight: 700; color: #7FA7FF; background: #1E2430;">빈스타그램</th>
+            <th style="padding: 7px 12px; text-align: left; font-size: 11px; font-weight: 600; color: #66718A; background: #1E2430; width: 150px;">승자</th>
+          </tr>
+          <tr><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E8ECF2; font-weight: 600;">① 속도</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">받아쓰기 30초 + 대본 3개까지 총 3분</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">받아쓰기 10초 + 표·대본까지 총 1분</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #7FA7FF; font-weight: 700;">빈스타그램</td></tr><tr><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E8ECF2; font-weight: 600;">② 받아쓰기 정확도</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">타임스탬프 없음 · 고유명사 오청취 (“클로드 코워크” → “코워크드”)</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">16문장 분리 + 초 단위 타임스탬프 + 한국어 번역 + 클릭 시 영상 이동</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #7FA7FF; font-weight: 700;">빈스타그램</td></tr><tr><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E8ECF2; font-weight: 600;">③ 성공 요인 분석</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">서술형 설명 · 범용 문구 일부 섞임</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">13칸 구조화 표 (후킹 유형 · 타겟 · 타이밍 · CTA 등)</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5; font-weight: 700;">무승부 — 서술 vs 표, 목적이 다름</td></tr><tr><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E8ECF2; font-weight: 600;">④ 새 대본 퀄리티</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">3가지 톤 제공 · 문장이 자연스러움 / 길이 82 → 96초로 초과</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">1개만 제공 · 81초로 길이 정확 / 문장 밋밋 + 없는 통계 지어냄 (“일주일 → 하루”)</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5; font-weight: 700;">훅AI 문장력 · 빈스타 정확도</td></tr><tr><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E8ECF2; font-weight: 600;">⑤ 수정 편의성</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">초 단위 환산 · 길이 자동 단축 버튼 · 채팅으로 재요청</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #9AA5B5;">문장 클릭 수정 + SRT 내보내기만</td><td style="padding: 9px 12px; border-top: 1px solid #2A3140; vertical-align: top; font-size: 12.5px; line-height: 1.5; color: #E9B25B; font-weight: 700;">훅AI</td></tr>
+        </table>
+      </div>
+      <div style="border: 1px solid #2A3140; border-radius: 14px; background: #171C25; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-size: 15px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em;">핵심 인사이트 3가지</div>
+        <div style="display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #E9B25B; font-weight: 500;">1</span><div style="font-size: 12.5px; line-height: 1.55;"><span style="font-weight: 600; color: #E8ECF2;">“잘 쓰는 것”과 “잘 보여주는 것”은 다른 능력</span> <span style="color: #9AA5B5;">— 훅AI는 결과물은 좋지만 과정을 숨기고, 빈스타그램은 과정은 투명하지만 결과물이 심심함. 왕초보에게는 둘 다 필요.</span></div></div><div style="display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #E9B25B; font-weight: 500;">2</span><div style="font-size: 12.5px; line-height: 1.55;"><span style="font-weight: 600; color: #E8ECF2;">선택지를 주면 의사결정이 쉬워진다</span> <span style="color: #9AA5B5;">— 대본 1개면 “이게 맞나?” 고민하지만, 3개를 주고 고르게 하면 초보자도 잘 고름.</span></div></div><div style="display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #E9B25B; font-weight: 500;">3</span><div style="font-size: 12.5px; line-height: 1.55;"><span style="font-weight: 600; color: #E8ECF2;">AI는 스스로 정한 규칙도 어긴다</span> <span style="color: #9AA5B5;">— 표에 ‘타겟 명시’라고 적고 정작 대본엔 타겟을 안 넣음 · 없는 숫자를 지어내는 할루시네이션 발생 → 생성 후 자동 검증 단계 필수.</span></div></div>
+      </div>
+    </div>
+
+    <div style="border: 1px solid #2A3140; border-radius: 14px; background: #171C25; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><div style="font-size: 15px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em;">신규 서비스 기능 설계 반영표</div><div style="display: flex; gap: 6px;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #E9B25B; font-size: 11px; font-weight: 700; white-space: nowrap;">훅AI에서</span><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #7FA7FF; font-size: 11px; font-weight: 700; white-space: nowrap;">빈스타에서</span><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #6CCB9A; font-size: 11px; font-weight: 700; white-space: nowrap;">새로 추가</span></div></div>
+      
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #6CCB9A; font-size: 11px; font-weight: 700; white-space: nowrap;">신규</span><span style="font-size: 10px; color: #66718A; white-space: nowrap;">필수</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">링크 한 줄 입력</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">파일 업로드 대신 URL 붙여넣기 · 해외 영상 지원 · 왕초보 진입장벽 최소화</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">확보 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #7FA7FF; font-size: 11px; font-weight: 700; white-space: nowrap;">빈스타</span><span style="font-size: 10px; color: #66718A; white-space: nowrap;">필수</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">타임스탬프 + 한국어 번역 동시 표시</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">문장별 몇 초인지 · 원문·번역 함께 · 클릭하면 그 구간 재생</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">확보 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #7FA7FF; font-size: 11px; font-weight: 700; white-space: nowrap;">빈스타</span><span style="font-size: 10px; color: #66718A; white-space: nowrap;">필수</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">13칸 구조화 분석표</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">“왜 잘 됐는지”를 서술 대신 표로 → 학습 곡선 낮춤</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v2</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #E9B25B; font-size: 11px; font-weight: 700; white-space: nowrap;">훅AI</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">페르소나 1회 입력 후 기억</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">누구에게 · 무슨 이야기 · 어떤 말투를 처음 한 번만 받고 계속 유지</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #E9B25B; font-size: 11px; font-weight: 700; white-space: nowrap;">훅AI</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">3가지 톤 대본 동시 제공</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">원본형 · 대화형 · 후킹 강조형 중 사용자가 고름</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #7FA7FF; font-size: 11px; font-weight: 700; white-space: nowrap;">빈스타</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">길이 자동 맞춤</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">초 단위 정확 계산(빈스타) + 초과 시 자동 단축(훅AI) 결합</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #6CCB9A; font-size: 11px; font-weight: 700; white-space: nowrap;">신규</span><span style="font-size: 10px; color: #66718A; white-space: nowrap;">필수 · 최우선</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">생성 후 자동 셀프 검증</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">원문을 베꼈나? · 설계도 약속(타겟·구조)을 지켰나? · 없는 숫자·사실을 지어냈나? 3가지 자동 체크</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #6CCB9A; font-size: 11px; font-weight: 700; white-space: nowrap;">신규</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">“고칠 것 딱 3개”만 안내</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">점수 매기기 · 복잡한 채팅창 대신 수정 포인트 3개만</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr 74px; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid #2A3140;">
+        <div style="display: flex; flex-direction: column; gap: 3px; align-items: flex-start;"><span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #252C3A; color: #E9B25B; font-size: 11px; font-weight: 700; white-space: nowrap;">훅AI</span></div>
+        <div style="min-width: 0;"><div style="font-size: 13px; font-weight: 600; color: #E8ECF2; line-height: 1.4;">썸네일 기반 제목 3개 추천</div><div style="font-size: 11.5px; color: #9AA5B5; line-height: 1.5;">첫 장면을 분석해 클릭을 부르는 제목 후보 3개 (영상 있을 때만)</div></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;"><span style="font-size: 11.5px; font-weight: 600; color: #6CCB9A;">변환 v3</span><span style="font-size: 10px; color: #66718A;">목업 반영</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 11.5px; color: #66718A;">
+    <span>남은 확인 사항 — hookai.kr · localhost:3000 실제 화면(버튼 배치 · 로딩 화면)은 아직 직접 확인 전. 화면 기록 권한 설정 또는 스크린샷 공유 후 디테일 반영.</span>
+    <span>조이 (Hermes Agent) 정리 · “대본 로봇 두 대의 시합” 리포트 재구성 · 2026-09-02</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

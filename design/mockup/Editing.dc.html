@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0E1116; font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: {{accent}}; } a:hover { color: #E8ECF2; }
+    * { box-sizing: border-box; }
+  </style>
+</helmet>
+<div translate="no" style="width: 1440px; height: 900px; background: #0E1116; color: #E8ECF2; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+  
+<div style="height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid #2A3140; background: #0E1116;">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 30px; height: 30px; border-radius: 8px; background: {{accent}}; display: flex; align-items: center; justify-content: center;">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path d="M7 5v14l11-7z" fill="#0E1116"/></svg>
+    </div>
+    <span style="font-size: 18px; font-weight: 700; letter-spacing: -0.01em; color: #E8ECF2;">BinStaGram</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px;">
+    <div style="width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #9AA5B5;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></div>
+    <div style="width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #9AA5B5;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+    <div style="width: 36px; height: 36px; border-radius: 50%; background: #1B2740; color: #7FA7FF; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center;">h</div>
+  </div>
+</div>
+  <div style="flex: 1 1 auto; display: flex; min-height: 0;">
+    
+<aside style="width: 232px; flex: 0 0 auto; background: #12161D; border-right: 1px solid #2A3140; padding: 16px 12px; display: flex; flex-direction: column; gap: 2px;">
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M9 6h12M9 12h12M9 18h12"/><path d="M3.5 5.5L4.5 5v3M3.5 12.5h2l-2 2.5h2M3.5 17h1.5a1 1 0 0 1 0 2H4.5a1 1 0 0 1 0 2H3.5"/></svg></span>
+  <span style="flex: 1 1 auto;">순서</span>
+</div>
+  <div style="font-size: 11.5px; color: #66718A; padding: 0 12px; margin: 18px 0 6px; letter-spacing: 0.02em;">제작 도구</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span>
+  <span style="flex: 1 1 auto;">링크로 찾기</span>
+</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; background: #1E2430; color: #E8ECF2; font-weight: 600; box-shadow: inset 0 0 0 1px #343C4D;">
+  <span style="display: flex; color: {{accent}};"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/><path d="M7 12h6M7 15h4"/></svg></span>
+  <span style="flex: 1 1 auto;">레퍼런스 대본 확보</span>
+</div>
+  
+<div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 12px; border-radius: 10px; font-size: 14px; color: #9AA5B5;">
+  <span style="display: flex; color: #66718A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 7h11l-3-3M20 17H9l3 3"/><path d="M4 7v2a3 3 0 0 0 3 3h2M20 17v-2a3 3 0 0 0-3-3h-2"/></svg></span>
+  <span style="flex: 1 1 auto;">레퍼런스 대본 변환</span>
+</div>
+</aside>
+    <main style="flex: 1 1 auto; min-width: 0; display: flex; gap: 20px; padding: 24px;">
+      
+<section style="width: 560px; flex: 0 0 auto; display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 16px; background: #12161D; border: 1px solid #2A3140;">
+  
+<div>
+  <h1 style="margin: 0; font-size: 20px; font-weight: 700; color: #E8ECF2; letter-spacing: -0.01em;">레퍼런스 대본 확보</h1>
+  <div style="font-size: 12.5px; color: #9AA5B5; margin-top: 4px;">레퍼런스 영상의 <b style="color: #E8ECF2;">음성을 글로 변환</b>해 타임코드가 붙은 대본을 만듭니다.</div>
+</div>
+  
+<div style="border: 1px solid #2A3140; border-radius: 12px; padding: 14px 16px 16px; background: #171C25;">
+  <div style="font-size: 12.5px; color: #9AA5B5; margin-bottom: 10px;">동영상 / 오디오 최대 5개 <span style="color: #66718A;">(파일당 25MB 이하 · 파일마다 대본 1개)</span> <span style="color: #66718A;">· 2/5</span></div>
+  <div style="border: 1.5px dashed #343C4D; border-radius: 10px; padding: 16px 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; background: #1E2430;">
+    <span style="display: flex; color: #9AA5B5;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M12 16V5M7 10l5-5 5 5"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+    <div style="font-size: 14px; font-weight: 600; color: #E8ECF2;">동영상 / 오디오</div>
+    <div style="font-size: 12px; color: #66718A;">클릭하거나 파일을 끌어다 업로드</div>
+    <div style="display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; margin-top: 6px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2;"><span style="display: flex; color: #9AA5B5;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>에셋 선택</div>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+      <div style="display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 8px 0 4px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2;">
+        <span style="width: 28px; height: 28px; border-radius: 6px; background: #1E2430; display: flex; align-items: center; justify-content: center; color: #9AA5B5; font-size: 10px; font-weight: 700;">VID</span>
+        <span style="font-weight: 500;">reel_cooking.mp4</span>
+        <span style="color: #66718A; font-variant-numeric: tabular-nums;">23s</span>
+        <span style="display: flex; color: #66718A; margin-left: 2px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 8px 0 4px; border-radius: 8px; background: #252C3A; border: 1px solid #343C4D; font-size: 12.5px; color: #E8ECF2;">
+        <span style="width: 28px; height: 28px; border-radius: 6px; background: #1E2430; display: flex; align-items: center; justify-content: center; color: #9AA5B5; font-size: 10px; font-weight: 700;">AUD</span>
+        <span style="font-weight: 500;">voice_memo.m4a</span>
+        <span style="color: #66718A; font-variant-numeric: tabular-nums;">19s</span>
+        <span style="display: flex; color: #66718A; margin-left: 2px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+      </div></div>
+</div>
+  
+<div style="border: 1px solid #2A3140; border-radius: 12px; padding: 14px 16px 12px; background: #171C25; min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
+  <div style="font-size: 14px; line-height: 1.7; color: #E8ECF2;"><span style="display: inline-block; padding: 0 6px; border-radius: 5px; background: #1B2740; color: #7FA7FF; font-weight: 600;">@reel_cooking.mp4</span> 는 구어체 그대로 유지하고 군더더기만 제거. <span style="display: inline-block; padding: 0 6px; border-radius: 5px; background: #1B2740; color: #7FA7FF; font-weight: 600;">@voice_memo.m4a</span> 는 문장 단위로 줄바꿈.</div>
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 8px; background: #1E2430; border: 1px solid #2A3140; font-size: 12.5px; color: #9AA5B5;"><span style="display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><circle cx="12" cy="12" r="4"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-4 7.5"/></svg></span>참조</div>
+    <div style="font-size: 12px; color: #66718A; font-variant-numeric: tabular-nums;">72/1000</div>
+  </div>
+</div>
+  
+<div style="display: flex; flex-direction: column; gap: 12px;">
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 14px; border-radius: 10px; background: #171C25; border: 1px solid #2A3140; font-size: 14px; color: #E8ECF2;">
+      <span style="display: flex; gap: 8px; align-items: center;"><span style="color: #66718A; font-size: 12.5px;">언어</span><span style="font-weight: 500;">한국어</span></span><span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M6 9l6 6 6-6"/></svg></span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 14px; border-radius: 10px; background: #171C25; border: 1px solid #2A3140; font-size: 14px; color: #E8ECF2;">
+      <span style="display: flex; gap: 8px; align-items: center;"><span style="color: #66718A; font-size: 12.5px;">화자 구분</span><span style="font-weight: 500;">켜기</span></span>
+      <span style="width: 34px; height: 20px; border-radius: 10px; background: {{accent}}; position: relative;"><span style="position: absolute; top: 2px; left: 16px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF;"></span></span>
+    </div>
+  </div>
+  <div style="height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; background: {{accent}}; color: #0E1116;">대본 생성 (2개)</div>
+  <div style="font-size: 11.5px; color: #66718A; text-align: center;">파일마다 대본 1개가 만들어져요 · 음성 인식은 OpenAI Whisper API로 처리 예정</div>
+</div>
+</section>
+      
+<section style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; padding: 20px; border-radius: 16px; background: #12161D; border: 1px solid #2A3140;">
+  
+<div style="display: flex; gap: 20px; border-bottom: 1px solid #2A3140; margin-bottom: 16px;">
+  <span style="padding: 0 2px 10px; font-size: 14px; color: #66718A;">대본 결과 <span style="color: #66718A; font-weight: 500;">0</span></span>
+  <span style="padding: 0 2px 10px; font-size: 14px; font-weight: 600; color: #E8ECF2; border-bottom: 2px solid {{accent}};">예시</span>
+</div>
+  <div style="display: flex; flex-direction: column; gap: 14px;">
+    <div style="position: relative;">
+      
+<div style="position: relative; height: 380px; border-radius: 14px; overflow: hidden; background: linear-gradient(160deg, #3A3324 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 14px; top: 14px; font-size: 12px; color: #9AA5B5;">요리 릴스 · 음소거</span>
+  
+<div style="position: absolute; left: 16px; right: 16px; bottom: 22px; display: flex; justify-content: center;">
+  <span style="max-width: 90%; text-align: center; background: rgba(0,0,0,0.72); color: #FFFFFF; padding: 7px 14px; border-radius: 8px; font-size: 15px; font-weight: 600; line-height: 1.45;">자, 이 장면 잘 보세요. 여기서 딱 3초만 멈춰볼게요.</span>
+</div>
+</div>
+      <div style="position: absolute; right: 14px; top: 14px; width: 32px; height: 32px; border-radius: 8px; background: rgba(14,17,22,0.6); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 10v4h3l4 3V7L7 10z"/><path d="M16 9l5 6M21 9l-5 6"/></svg></div>
+    </div>
+    <div style="font-size: 12.5px; color: #9AA5B5; line-height: 1.6;">이렇게 나옵니다 — 영상 위에 <b style="color: #E8ECF2;">말한 문장이 자막으로 동기 표시</b>되고, 아래에 타임코드가 붙은 대본이 정리됩니다. 왼쪽에 영상을 올리고 「대본 생성」을 눌러보세요.</div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M15 6l-6 6 6 6"/></svg></span>
+      <div style="flex: 1 1 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px;">
+        <div style="border-radius: 10px; outline: 2px solid {{accent}}; outline-offset: 2px;">
+<div style="position: relative; height: 96px; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #3A3324 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 10px; bottom: 8px; font-size: 10.5px; color: #9AA5B5;">요리 릴스</span>
+  
+</div></div><div style="border-radius: 10px; ">
+<div style="position: relative; height: 96px; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #22303C 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 10px; bottom: 8px; font-size: 10.5px; color: #9AA5B5;">운동 루틴</span>
+  
+</div></div><div style="border-radius: 10px; ">
+<div style="position: relative; height: 96px; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #2B2F3F 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 10px; bottom: 8px; font-size: 10.5px; color: #9AA5B5;">인터뷰 클립</span>
+  
+</div></div><div style="border-radius: 10px; ">
+<div style="position: relative; height: 96px; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #3A2630 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 10px; bottom: 8px; font-size: 10.5px; color: #9AA5B5;">제품 리뷰</span>
+  
+</div></div><div style="border-radius: 10px; ">
+<div style="position: relative; height: 96px; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #26343A 0%, #0E1116 100%); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(232,236,242,0.14); display: flex; align-items: center; justify-content: center; color: #E8ECF2;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></div>
+  <span style="position: absolute; left: 10px; bottom: 8px; font-size: 10.5px; color: #9AA5B5;">브이로그</span>
+  
+</div></div>
+      </div>
+      <span style="display: flex; color: #66718A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M9 6l6 6-6 6"/></svg></span>
+    </div>
+  </div>
+</section>
+    </main>
+  </div>
+  
+<div style="position: absolute; right: 28px; bottom: 28px; width: 52px; height: 52px; border-radius: 50%; background: {{accent}}; color: #0E1116; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.35);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; "><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z"/></svg></div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#E9B25B","options":["#E9B25B","#5EE0B8","#7FA7FF","#F26D7D"],"section":"브랜드"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#E9B25B' };
+  }
+}
+</script>
+</body>
+</html>
