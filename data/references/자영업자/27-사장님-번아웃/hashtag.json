@@ -1,0 +1,43 @@
+{
+ "query": "#businessownerburnout",
+ "strength": "strong",
+ "label": "해시태그 강함",
+ "note": "의외로 강함. 심리치료사의 \"type A 번아웃\" 릴스 63만, 고백형 브이로그·1인 사업자 공감 릴스가 10만 이상.",
+ "posts": [
+  {
+   "shortcode": "DaJbGXOs_V5",
+   "url": "https://www.instagram.com/p/DaJbGXOs_V5/",
+   "owner": "therapist_in_chicago",
+   "metric": "626K 좋아요 · 2.6K 댓글",
+   "desc": "Jocelyn Nelson LCPC. \"type A는 번아웃도 잘하려 한다\""
+  },
+  {
+   "shortcode": "DbT3h__Ph7o",
+   "url": "https://www.instagram.com/p/DbT3h__Ph7o/",
+   "owner": "maplebutteroll",
+   "metric": "306K 좋아요 · 3.3K 댓글",
+   "desc": "Nini. 릴스"
+  },
+  {
+   "shortcode": "C3PDsESrfbd",
+   "url": "https://www.instagram.com/p/C3PDsESrfbd/",
+   "owner": "jenayroseofficial",
+   "metric": "214K 좋아요 · 5.3K 댓글",
+   "desc": "\"Business Owners: But I'm only one person\" 공감형"
+  },
+  {
+   "shortcode": "DaxxpLXRusW",
+   "url": "https://www.instagram.com/p/DaxxpLXRusW/",
+   "owner": "phiphamofficial",
+   "metric": "73K 좋아요 · 6.9K 댓글",
+   "desc": "Phi Pham. \"It's been hard today, and it's not even 11am\" 고백형"
+  },
+  {
+   "shortcode": "DaS_145Cqvd",
+   "url": "https://www.instagram.com/p/DaS_145Cqvd/",
+   "owner": "hackinghr",
+   "metric": "785 좋아요",
+   "desc": "번아웃 신호 카드"
+  }
+ ]
+}

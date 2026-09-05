@@ -1,6 +1,8 @@
 import type { Job } from "./types";
 
 export const JOBS_KEY = "bsg.jobs.v1";
+/** 「이 대본으로 변환」이 변환 화면에 넘겨 주는 원본 대본 id (sessionStorage) */
+export const PICK_SOURCE_KEY = "bsg.convert.pickSource.v1";
 
 /** 저장된 대본 결과 읽기 (미리보기 URL은 제외된 상태) */
 export function loadJobs(): Job[] {

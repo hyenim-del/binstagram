@@ -96,6 +96,8 @@ out = ROOT.parent / 'lib' / 'references.json'
 out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
 tot = sum(len(k['creators']) for k in data['keywords'])
 print('wrote', out, 'creators', tot)
+print('NOTE: 앱 데이터의 원본은 data/references/ 폴더입니다. 이 결과로 폴더를 다시 만들려면')
+print('      node scripts/refs.mjs split --force   (폴더 안에서 직접 고친 내용은 사라짐)')
 for k in data['keywords'][:30]:
     cs = k['creators']
     print(k['id'], k['ko'], len(cs), '|', '; '.join(f"@{c['handle']} {c['followers'] or '?'} {c['country'] or '?'}" for c in cs[:4]))

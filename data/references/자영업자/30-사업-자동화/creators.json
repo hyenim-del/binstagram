@@ -1,0 +1,92 @@
+[
+ {
+  "handle": "nateherkai",
+  "url": "https://www.instagram.com/nateherkai/",
+  "name": "Nate Herk",
+  "country": "미국",
+  "followers": "294K",
+  "format": "릴스 (텍스트 오버레이 클립)",
+  "desc": "AI Automation Society 창업자, n8n 자동화 교육. 릴스 대부분 화면 텍스트 오버레이 + 짧은 자동화 팁, Claude 등 최신 툴 언급, 커뮤니티(AIS) CTA. \"누구나 무엇이든 자동화\" 슬로건형 후킹.",
+  "aux": false
+ },
+ {
+  "handle": "gannon.meyer",
+  "url": "https://www.instagram.com/gannon.meyer/",
+  "name": "Gannon Meyer",
+  "country": "미확인",
+  "followers": "195K",
+  "format": "릴스 (워크플로 시연)",
+  "desc": "Creator Academy 운영, 인스타→이메일 자동화 퍼널 구축 교육. 화면녹화로 파이프라인을 시연하는 실전형 포맷.",
+  "aux": false
+ },
+ {
+  "handle": "theclarkgary",
+  "url": "https://www.instagram.com/theclarkgary/",
+  "name": "Clark Gary",
+  "country": "미확인",
+  "followers": "155K",
+  "format": "릴스 + 카루셀",
+  "desc": "\"The Go-To Manychat Expert\" — 댓글→DM 자동화 퍼널. \"150+ 고객, 430K 리드 생성\" 숫자 권위 훅, Testimonials 하이라이트, 결혼·일상 섞어 인간미. 소상공인이 바로 적용 가능한 DM 자동화 튜토리얼 레퍼런스.",
+  "aux": false
+ },
+ {
+  "handle": "liamottley",
+  "url": "https://www.instagram.com/liamottley/",
+  "name": "Liam Ottley",
+  "country": "미확인",
+  "followers": "41K",
+  "format": "미확인",
+  "desc": "Morningside AI 공동창업자, \"AI 자동화 에이전시\" 비즈니스 모델 교육의 대표 인물. IG는 작지만 YouTube 롱폼 권위를 짧은 클립으로 옮기는 구조.",
+  "aux": false
+ },
+ {
+  "handle": "imanoubou",
+  "url": "https://www.instagram.com/imanoubou/",
+  "name": "",
+  "country": "미확인",
+  "followers": "60K",
+  "format": "릴스 (툴 워크스루)",
+  "desc": "콘텐츠 마케팅·제품 제작용 AI 툴 워크스루. 특정 툴 하나를 화면녹화로 보여주는 포맷.",
+  "aux": false
+ },
+ {
+  "handle": "aiforbusinesslive",
+  "url": "https://www.instagram.com/aiforbusinesslive/",
+  "name": "",
+  "country": "",
+  "followers": "",
+  "format": "",
+  "desc": "68K, \"무료 3일 AI for Business 이벤트\" 브랜드 계정 (개인 아님) — https://www.instagram.com/aiforbusinesslive/",
+  "aux": false
+ },
+ {
+  "handle": "aiautomation.cc",
+  "url": "https://www.instagram.com/aiautomation.cc/",
+  "name": "",
+  "country": "",
+  "followers": "",
+  "format": "",
+  "desc": "33K, 자동화 시스템 구축·멘토링 — https://www.instagram.com/aiautomation.cc/",
+  "aux": false
+ },
+ {
+  "handle": "rowancheung",
+  "url": "https://www.instagram.com/rowancheung/",
+  "name": "",
+  "country": "",
+  "followers": "",
+  "format": "",
+  "desc": "441K, The Rundown AI 뉴스레터 창업자, AI 뉴스 위주(자동화 튜토리얼은 아님) — https://www.instagram.com/rowancheung/",
+  "aux": false
+ },
+ {
+  "handle": "danmartell",
+  "url": "https://www.instagram.com/danmartell/",
+  "name": "",
+  "country": "",
+  "followers": "",
+  "format": "",
+  "desc": "3M, AI 인큐베이터 운영 + 위임/시스템 메시지 (27번 참조)",
+  "aux": false
+ }
+]

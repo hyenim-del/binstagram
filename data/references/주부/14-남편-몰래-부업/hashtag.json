@@ -1,0 +1,36 @@
+{
+ "query": "#sidehustleformoms",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "댓글 유도형 제휴 게시물이 섞임. elly.watso 건은 좋아요보다 댓글이 많은 전형적 comment-bait.",
+ "posts": [
+  {
+   "shortcode": "DYBl0MGufK9",
+   "url": "https://www.instagram.com/p/DYBl0MGufK9/",
+   "owner": "elly.watso",
+   "metric": "84K 좋아요 · 108K 댓글",
+   "desc": "\"Past me wouldn't believe this…\" 댓글 유도형"
+  },
+  {
+   "shortcode": "CqnZl43o9so",
+   "url": "https://www.instagram.com/p/CqnZl43o9so/",
+   "owner": "savingwithben",
+   "metric": "231 좋아요",
+   "desc": "개인재무 팁"
+  },
+  {
+   "shortcode": "DZFcLA9Eabm",
+   "url": "https://www.instagram.com/p/DZFcLA9Eabm/",
+   "owner": "iamlatashapeterson",
+   "metric": "165 좋아요",
+   "desc": "부업 아이디어"
+  },
+  {
+   "shortcode": "DahDpJeMnBD",
+   "url": "https://www.instagram.com/p/DahDpJeMnBD/",
+   "owner": "_brendasnider_",
+   "metric": "35 좋아요 · 191 댓글",
+   "desc": "\"Getting paid to do chores?\""
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "query": "#retailtips",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "VMD·가격 전략 카드, 수십 좋아요. 웹검색(ajalderson, theboutiquehub, shwinnabegobrand) 사용.",
+ "posts": [
+  {
+   "shortcode": "DWBXV5BCGKe",
+   "url": "https://www.instagram.com/p/DWBXV5BCGKe/",
+   "owner": "visual_by_josephine",
+   "metric": "26 좋아요",
+   "desc": "비주얼 머천다이징 팁"
+  },
+  {
+   "shortcode": "DNQRkm9ALQJ",
+   "url": "https://www.instagram.com/p/DNQRkm9ALQJ/",
+   "owner": "julia_the_retail_therapist",
+   "metric": "18 좋아요",
+   "desc": "Julia Hays. 관세 시대 가격 전략"
+  }
+ ]
+}

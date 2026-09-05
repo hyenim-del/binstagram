@@ -1,0 +1,43 @@
+{
+ "query": "#easymeals",
+ "strength": "mid",
+ "label": "해시태그 보통",
+ "note": "1위는 인도 크리에이터. 서구권은 \"lazy girl dinner\", 에어프라이어 팁 인포그래픽이 상위.",
+ "posts": [
+  {
+   "shortcode": "DaAjCtqRx35",
+   "url": "https://www.instagram.com/p/DaAjCtqRx35/",
+   "owner": "joee_cooks",
+   "metric": "584K 좋아요",
+   "desc": "Sofin Joel(인도). \"MEALS UNDER\" 시리즈, Hariyali soya rice"
+  },
+  {
+   "shortcode": "DZyW3KQxh1y",
+   "url": "https://www.instagram.com/p/DZyW3KQxh1y/",
+   "owner": "makayla_thomas_fit",
+   "metric": "72K 좋아요",
+   "desc": "MaKayla Thomas(미국). \"lazy girl dinner, high protein low cal\" 히바치"
+  },
+  {
+   "shortcode": "CJ6F5F-gtKN",
+   "url": "https://www.instagram.com/p/CJ6F5F-gtKN/",
+   "owner": "healthyminutemeals",
+   "metric": "16K 좋아요 (2020)",
+   "desc": "리포스트 레시피 계정"
+  },
+  {
+   "shortcode": "DZKjMbIpQYE",
+   "url": "https://www.instagram.com/p/DZKjMbIpQYE/",
+   "owner": "recipejournal101",
+   "metric": "7.4K 좋아요",
+   "desc": "간단 라이스 요리 모음"
+  },
+  {
+   "shortcode": "DcG3J_5CJnt",
+   "url": "https://www.instagram.com/p/DcG3J_5CJnt/",
+   "owner": "(미확인)",
+   "metric": "2.6K 좋아요",
+   "desc": "\"20 Air Fryer Tips\" 인포그래픽"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "query": "#minimalistliving",
+ "strength": "mid",
+ "label": "해시태그 보통",
+ "note": "상위가 전부 인테리어 렌더링·시공 계정(인도 다수). 미니멀 \"라이프\" 크리에이터는 해시태그보다 웹검색 목록이 정확.",
+ "posts": [
+  {
+   "shortcode": "DaXqs9QuMG5",
+   "url": "https://www.instagram.com/p/DaXqs9QuMG5/",
+   "owner": "siyad_abdali",
+   "metric": "219K 좋아요",
+   "desc": "숲속 로프트 인테리어 영상"
+  },
+  {
+   "shortcode": "Dadlc6fyY4-",
+   "url": "https://www.instagram.com/p/Dadlc6fyY4-/",
+   "owner": "watchthebuild",
+   "metric": "71K 좋아요",
+   "desc": "빈 방 → 아늑한 거실 변신"
+  },
+  {
+   "shortcode": "DaBD8H4os3a",
+   "url": "https://www.instagram.com/p/DaBD8H4os3a/",
+   "owner": "3d.forgestudio",
+   "metric": "58K 좋아요",
+   "desc": "3D 렌더링 스튜디오"
+  },
+  {
+   "shortcode": "DcYEFpkTsrn",
+   "url": "https://www.instagram.com/p/DcYEFpkTsrn/",
+   "owner": "phoenixhomz.interiors",
+   "metric": "26K 좋아요",
+   "desc": "벵갈루루 인테리어 업체"
+  },
+  {
+   "shortcode": "DS-0R-0jHdR",
+   "url": "https://www.instagram.com/p/DS-0R-0jHdR/",
+   "owner": "modern_homestyle",
+   "metric": "19K 좋아요",
+   "desc": "인테리어 큐레이션"
+  }
+ ]
+}

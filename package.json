@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/refs.mjs merge",
     "dev": "next dev -p 3000",
+    "prebuild": "node scripts/refs.mjs merge",
     "build": "next build",
-    "start": "next start -p 3000"
+    "start": "next start -p 3000",
+    "refs:merge": "node scripts/refs.mjs merge",
+    "refs:split": "node scripts/refs.mjs split",
+    "refs:check": "node scripts/refs.mjs check",
+    "refs:import": "node scripts/refs.mjs import",
+    "refs:watch": "node scripts/refs.mjs watch"
   },
   "dependencies": {
     "next": "^15.5.0",

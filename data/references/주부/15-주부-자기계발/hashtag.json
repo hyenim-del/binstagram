@@ -1,0 +1,29 @@
+{
+ "query": "#momselfcare",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "명언·텍스트 카드 커뮤니티 계정. 릴스형 개인 크리에이터는 웹검색(brookeraybould) 참고.",
+ "posts": [
+  {
+   "shortcode": "DEdDj5FioW_",
+   "url": "https://www.instagram.com/p/DEdDj5FioW_/",
+   "owner": "momwithyou",
+   "metric": "18K 좋아요",
+   "desc": "Mom Community 명언 카드"
+  },
+  {
+   "shortcode": "DGY4b7YyNDD",
+   "url": "https://www.instagram.com/p/DGY4b7YyNDD/",
+   "owner": "mommysbundle",
+   "metric": "1.8K 좋아요",
+   "desc": "Ana Maria Taney. \"Who else needed to hear this\""
+  },
+  {
+   "shortcode": "DZzAkpNNtVo",
+   "url": "https://www.instagram.com/p/DZzAkpNNtVo/",
+   "owner": "littlejoysformoms",
+   "metric": "62 좋아요",
+   "desc": "텍스트 카드"
+  }
+ ]
+}

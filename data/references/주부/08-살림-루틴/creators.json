@@ -1,0 +1,52 @@
+[
+ {
+  "handle": "anna_louisa_at_home",
+  "url": "https://www.instagram.com/anna_louisa_at_home/",
+  "name": "",
+  "country": "영국",
+  "followers": "4.3M",
+  "format": "릴스",
+  "desc": "『The 5 Minute Clean Routine』 저자. 5분 루틴, 아침/저녁 리셋, 잔잔한 보이스오버+ASMR. 1순위 레퍼런스.",
+  "aux": false
+ },
+ {
+  "handle": "mama_mila_au",
+  "url": "https://www.instagram.com/mama_mila_au/",
+  "name": "Chantel Mila",
+  "country": "호주",
+  "followers": "3M",
+  "format": "릴스",
+  "desc": "\"이렇게 하지 마세요→이렇게\" 짧은 자막형 구조.",
+  "aux": false
+ },
+ {
+  "handle": "gocleanco",
+  "url": "https://www.instagram.com/gocleanco/",
+  "name": "Sarah McAllister",
+  "country": "캐나다",
+  "followers": "3M",
+  "format": "릴스",
+  "desc": "직설적·유머 톤, 전/후 극대비, 제품 추천 결합.",
+  "aux": false
+ },
+ {
+  "handle": "cleanmama",
+  "url": "https://www.instagram.com/cleanmama/",
+  "name": "Becky Rapinchuk",
+  "country": "미국",
+  "followers": "770K",
+  "format": "캐러셀",
+  "desc": "요일별 청소 루틴 시스템 원조. 캐러셀 표 + 실행 릴스.",
+  "aux": false
+ },
+ {
+  "handle": "cleanthatup",
+  "url": "https://www.instagram.com/cleanthatup/",
+  "name": "Brandon Pleshek",
+  "country": "미국",
+  "followers": "220K",
+  "format": "릴스",
+  "desc": "3대째 청소업 \"janitor\" 포지셔닝, satisfying 클린 영상.",
+  "aux": false
+ }
+]

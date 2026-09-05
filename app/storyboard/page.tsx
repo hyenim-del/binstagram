@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { buildStoryboardHtml, captureFramesFromBlob, type StoryboardInput } from "@/lib/storyboard";
 
 /**
  * 「PDF 스토리보드」가 열리는 탭. 대본 변환 화면이 window.open 으로 이 페이지를 연 뒤,
@@ -31,16 +32,26 @@ export default function Page() {
       /* ignore */
     }
     let iv: ReturnType<typeof setInterval> | null = null;
-    const onMsg = (e: MessageEvent) => {
-      if (e.origin !== location.origin || !e.data || e.data.type !== STORYBOARD_MSG || typeof e.data.html !== "string") return;
+    const onMsg = async (e: MessageEvent) => {
+      if (e.origin !== location.origin || !e.data || e.data.type !== STORYBOARD_MSG) return;
+      let html: string;
+      if (typeof e.data.html === "string") {
+        html = e.data.html; // 예전 방식(완성된 HTML)
+      } else if (e.data.input && typeof e.data.input === "object") {
+        // 연 쪽은 백그라운드가 되어 영상을 못 읽으니, 앞에 떠 있는 이 탭에서 장면을 캡처한다(2026-09-04)
+        const input = e.data.input as StoryboardInput;
+        const media = e.data.media instanceof Blob ? e.data.media : null;
+        const frames = await captureFramesFromBlob(media, input.lines);
+        html = buildStoryboardHtml({ ...input, frames });
+      } else return;
       window.removeEventListener("message", onMsg);
       if (iv) clearInterval(iv);
       try {
-        sessionStorage.setItem(KEY, e.data.html);
+        sessionStorage.setItem(KEY, html);
       } catch {
         /* 너무 크면 새로 고침 복원만 포기 */
       }
-      show(e.data.html);
+      show(html);
     };
     window.addEventListener("message", onMsg);
     // 연 쪽이 언제 준비되든 받을 수 있게 준비 신호를 반복해서 보낸다

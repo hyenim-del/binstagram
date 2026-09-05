@@ -1,0 +1,43 @@
+{
+ "query": "#usewhatyouhave · #pantrymeals",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "첫 태그는 공예·화장품 no-buy, 두 번째는 캔 요리 위주로 상위가 2.4만. \"냉장고 파먹기\" 결은 웹검색의 dtdinners·budgetbytes가 더 맞음.",
+ "posts": [
+  {
+   "shortcode": "C12LJ5Yua5Q",
+   "url": "https://www.instagram.com/p/C12LJ5Yua5Q/",
+   "owner": "sarah.robertson.barnes",
+   "metric": "183K 좋아요 (2024)",
+   "desc": "제로웨이스트. \"Are reusables fast fashion now?\""
+  },
+  {
+   "shortcode": "Cw0qDWsu7AV",
+   "url": "https://www.instagram.com/p/Cw0qDWsu7AV/",
+   "owner": "fentybeauty",
+   "metric": "27K 좋아요",
+   "desc": "빈 하이라이터 리포스트"
+  },
+  {
+   "shortcode": "DaeQ5NWhpTd",
+   "url": "https://www.instagram.com/p/DaeQ5NWhpTd/",
+   "owner": "good.vibes.cooking",
+   "metric": "24K 좋아요",
+   "desc": "Creamy Canned Clams, 캔 재료 요리"
+  },
+  {
+   "shortcode": "DXJNNwDCnOh",
+   "url": "https://www.instagram.com/p/DXJNNwDCnOh/",
+   "owner": "marionskitchen",
+   "metric": "13K 좋아요",
+   "desc": "Marion's Kitchen(호주). \"Too tired to cook…\""
+  },
+  {
+   "shortcode": "CCY3ovspbeu",
+   "url": "https://www.instagram.com/p/CCY3ovspbeu/",
+   "owner": "(미확인)",
+   "metric": "2.7K 좋아요",
+   "desc": "Spinach artichoke quesadilla 15분"
+  }
+ ]
+}

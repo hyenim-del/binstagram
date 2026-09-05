@@ -1,0 +1,52 @@
+[
+ {
+  "handle": "dtdinners",
+  "url": "https://www.instagram.com/dtdinners/",
+  "name": "Dollar Tree Dinners",
+  "country": "미국",
+  "followers": "645K",
+  "format": "릴스",
+  "desc": "\"$20으로 가족 저녁 4끼\" 같은 숫자형 훅. 예산 총액을 제목에 박는 방식이 냉파 콘텐츠에 바로 이식 가능.",
+  "aux": false
+ },
+ {
+  "handle": "budgetbytes",
+  "url": "https://www.instagram.com/budgetbytes/",
+  "name": "Beth Moncel",
+  "country": "미국",
+  "followers": "539K",
+  "format": "릴스",
+  "desc": "1인분 단가 표기가 시그니처. 팬트리 재료 레시피 아카이브, 참여형 설문.",
+  "aux": false
+ },
+ {
+  "handle": "workweeklunch",
+  "url": "https://www.instagram.com/workweeklunch/",
+  "name": "Talia",
+  "country": "미국",
+  "followers": "452K",
+  "format": "릴스",
+  "desc": "밀프렙 전문, \"한 번에 5끼\" 구조.",
+  "aux": false
+ },
+ {
+  "handle": "julia.pacheco.cooking",
+  "url": "https://www.instagram.com/julia.pacheco.cooking/",
+  "name": "",
+  "country": "미국",
+  "followers": "190K",
+  "format": "릴스",
+  "desc": "\"$X로 일주일\" 챌린지형, 손+식재료 클로즈업, 자막 위주.",
+  "aux": false
+ },
+ {
+  "handle": "justine_snacks",
+  "url": "https://www.instagram.com/justine_snacks/",
+  "name": "Justine Doiron",
+  "country": "미국",
+  "followers": "1M",
+  "format": "릴스",
+  "desc": "팬트리 비우기 시리즈. 트렌디한 편집으로 파먹기를 세련되게.",
+  "aux": false
+ }
+]

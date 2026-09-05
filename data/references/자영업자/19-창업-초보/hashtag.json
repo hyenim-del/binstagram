@@ -1,0 +1,22 @@
+{
+ "query": "#newbusinessowner",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "소상공인 개업 공지·개인 스토리. 수백 좋아요.",
+ "posts": [
+  {
+   "shortcode": "DM6P-m6TrJp",
+   "url": "https://www.instagram.com/p/DM6P-m6TrJp/",
+   "owner": "hamilton.mitch",
+   "metric": "531 좋아요",
+   "desc": "Josh Gyzen. 10년 전 정비소 인수 스토리"
+  },
+  {
+   "shortcode": "DcdJIs-vIEn",
+   "url": "https://www.instagram.com/p/DcdJIs-vIEn/",
+   "owner": "enchantingresincreations_",
+   "metric": "211 좋아요",
+   "desc": "\"behind every small business is a real person\""
+  }
+ ]
+}

@@ -20,11 +20,31 @@ export type RefCreator = {
   format: string;
   desc: string;
   aux: boolean; // 보조 후보(규모 작거나 주제 적합도 낮음)
+  // ── 아래는 매크로(insta-research) 가져오기로 채워지는 선택 항목 ──
+  metrics?: RefMetrics;
+  hits?: RefHit[]; // 조회수·댓글 기준을 통과한 게시물
+  sources?: string[]; // 발견 경로(해시태그·키워드)
+  importedAt?: string; // YYYY-MM-DD
 };
+
+export type RefMetrics = {
+  followers?: number | null;
+  hitCount?: number | null;
+  checked?: number | null;
+  engagement?: number | null; // 참여율(%)
+  avgLikes?: number | null;
+  avgComments?: number | null;
+  reelRatio?: number | null; // 릴스 비율(%)
+  avgReelViews?: number | null;
+  postsPerWeek?: number | null;
+  lastPostAt?: string | null;
+};
+
+export type RefHit = { kind: string; views: number | null; comments: number | null; url: string };
 
 export type RefKeyword = {
   id: number;
-  group: "주부" | "자영업자";
+  group: string; // 그룹 = data/references/ 의 폴더 이름(주부 · 자영업자 · 수익화 …)
   ko: string;
   tags: string[];
   hashtag: {
@@ -40,6 +60,9 @@ export type RefKeyword = {
 export type ReferenceData = { generatedAt: string; keywords: RefKeyword[] };
 
 export const REFERENCES = data as ReferenceData;
+
+/** 그룹 목록 — 데이터에 등장하는 순서(키워드 id 순) */
+export const GROUPS: string[] = [...new Set(REFERENCES.keywords.map((k) => k.group))];
 
 export const STRENGTH_BADGE: Record<HashtagStrength, "ok" | "warn" | "bad" | ""> = {
   strong: "ok",

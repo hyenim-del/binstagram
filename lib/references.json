@@ -2909,6 +2909,24 @@
      "aux": false
     }
    ]
+  },
+  {
+   "id": 31,
+   "group": "수익화",
+   "ko": "인스타 수익화",
+   "tags": [
+    "instagramgrowth",
+    "contentcreatortips",
+    "digitalproducts"
+   ],
+   "hashtag": {
+    "query": "#instagramgrowth",
+    "strength": "none",
+    "label": "해시태그 미조사",
+    "note": "매크로(config_monetization.yaml) 수집용으로 추가한 키워드. 해시태그 상위 게시물은 아직 직접 조사하지 않음.",
+    "posts": []
+   },
+   "creators": []
   }
  ]
 }

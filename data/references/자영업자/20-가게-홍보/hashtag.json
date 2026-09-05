@@ -1,0 +1,29 @@
+{
+ "query": "#localbusinessmarketing",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "소규모 에이전시·프리랜서 팁 카드. Google Business Profile 체크리스트 등 소재는 참고 가능.",
+ "posts": [
+  {
+   "shortcode": "DbYAQpVNl8X",
+   "url": "https://www.instagram.com/p/DbYAQpVNl8X/",
+   "owner": "thrivestech",
+   "metric": "274 좋아요",
+   "desc": "Ravi Yadav. Google Business Profile 체크리스트"
+  },
+  {
+   "shortcode": "DbOGAgbI3Ny",
+   "url": "https://www.instagram.com/p/DbOGAgbI3Ny/",
+   "owner": "aiagently",
+   "metric": "-",
+   "desc": "Usama Akram. comment MARKETING → AI 마케팅 자료"
+  },
+  {
+   "shortcode": "DcXmFRvxiNX",
+   "url": "https://www.instagram.com/p/DcXmFRvxiNX/",
+   "owner": "shanekilby",
+   "metric": "0",
+   "desc": "\"You don't become the local authority by…\""
+  }
+ ]
+}

@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { PICK_SOURCE_KEY } from "@/lib/jobStore";
 import { Icon } from "@/components/ui/icons";
 import { useToast } from "@/components/ui/Toast";
 import { toDisplayTime, toPlainText, toSrt } from "@/lib/srt";
@@ -21,6 +23,16 @@ function langName(id?: string) {
 }
 
 export function JobCard({ job, onRetry, onRemove }: Props) {
+  const router = useRouter();
+  /** 이 대본을 원본으로 「레퍼런스 대본 변환」 열기 — 휴대폰에서 다음 단계로 바로 가는 길 */
+  const toConvert = () => {
+    try {
+      sessionStorage.setItem(PICK_SOURCE_KEY, job.id);
+    } catch {
+      /* ignore */
+    }
+    router.push("/reference-convert");
+  };
   const toast = useToast();
   const media = useRef<HTMLVideoElement & HTMLAudioElement>(null);
   const [t, setT] = useState(0);
@@ -176,6 +188,9 @@ export function JobCard({ job, onRetry, onRemove }: Props) {
         <div className="btn-row">
           {job.status === "done" && (
             <>
+              <button className="btn primary next-step" onClick={toConvert} title="이 대본을 원본으로 새 대본 3안을 만들어요">
+                이 대본으로 변환 →
+              </button>
               <button className="btn" onClick={copy}>
                 <Icon.Clip size={14} /> 복사 (글만)
               </button>

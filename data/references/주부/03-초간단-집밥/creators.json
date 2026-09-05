@@ -1,0 +1,52 @@
+[
+ {
+  "handle": "simple.home.edit",
+  "url": "https://www.instagram.com/simple.home.edit/",
+  "name": "Nicole Maguire",
+  "country": "호주",
+  "followers": "3.5M",
+  "format": "릴스",
+  "desc": "\"Easy, family-friendly recipes | Saving you time, money and stress\". 원팬·저비용 평일 저녁 레시피를 손·팬 클로즈업 + 자막 텍스트로 빠르게 보여주는 포맷. 요리책 2권 베스트셀러, 신간 *Simple Weeknights*. '초간단 집밥' 키워드의 가장 직접적인 해외 대응 계정.",
+  "aux": false
+ },
+ {
+  "handle": "damn_delicious",
+  "url": "https://www.instagram.com/damn_delicious/",
+  "name": "Chungah Rhee",
+  "country": "미국",
+  "followers": "529K",
+  "format": "릴스 + 캐러셀",
+  "desc": "\"Quick and easy weeknight dinners for the everyday home cook\". 재료 적고 조리 단계 짧은 레시피를 깔끔한 탑뷰로 촬영. 가끔 반려견(코기) 콘텐츠로 친근감 — 정보 계정에 캐릭터 요소를 섞는 방식 참고.",
+  "aux": false
+ },
+ {
+  "handle": "cookingwithayeh",
+  "url": "https://www.instagram.com/cookingwithayeh/",
+  "name": "Ayeh Manfre",
+  "country": "호주",
+  "followers": "931K",
+  "format": "릴스",
+  "desc": "\"Easy everyday recipes with a healthy twist\". 짧은 컷 + 보이스오버 없이 텍스트 오버레이로 재료·순서를 안내하는 전형적 레시피 릴스. 건강한 변형(healthy twist)이라는 차별점 훅.",
+  "aux": false
+ },
+ {
+  "handle": "feelgoodfoodie",
+  "url": "https://www.instagram.com/feelgoodfoodie/",
+  "name": "Yumna Jawad",
+  "country": "미국",
+  "followers": "4.8M",
+  "format": "릴스 + 캐러셀",
+  "desc": "\"Healthy'ish Mediterranean Recipes\", #1 베스트셀러 요리책. 바이럴 퀘사디아 등 '누구나 따라할 수 있는 간단 레시피' 훅으로 성장. 2013년 가족 식사 사진에서 시작해 브랜드화한 사례.",
+  "aux": false
+ },
+ {
+  "handle": "cookathomemom",
+  "url": "https://www.instagram.com/cookathomemom/",
+  "name": "Madison",
+  "country": "미국",
+  "followers": "64K",
+  "format": "릴스",
+  "desc": "소규모지만 \"easy weeknight recipes + air fryer favorites\"로 주제가 매우 명확. 에어프라이어 중심 초간단 집밥이라는 서브 니치 참고용.",
+  "aux": false
+ }
+]

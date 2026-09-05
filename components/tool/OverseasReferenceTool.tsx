@@ -4,12 +4,8 @@ import { useMemo, useState } from "react";
 import { Icon } from "@/components/ui/icons";
 import { useToast } from "@/components/ui/Toast";
 import { LinkFind } from "./LinkFind";
-import { REFERENCES, STRENGTH_BADGE, keywordMatches, ownerUrl, type RefKeyword } from "@/lib/references";
-
-const GROUPS: { title: string; group: RefKeyword["group"] }[] = [
-  { title: "주부 타겟", group: "주부" },
-  { title: "자영업자 타겟", group: "자영업자" },
-];
+import { GROUPS, REFERENCES, STRENGTH_BADGE, keywordMatches, ownerUrl } from "@/lib/references";
+import { Fold } from "@/components/ui/Fold";
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -50,6 +46,8 @@ export function OverseasReferenceTool() {
     <div className="ref-page">
       <LinkFind value={link} onChange={setLink} />
 
+      {/* 휴대폰에서는 링크로 찾기만 먼저 보이고, 키워드 둘러보기는 접어 둔다 */}
+      <Fold label={`키워드로 해외 계정 둘러보기 · 키워드 ${REFERENCES.keywords.length} · 계정 ${totals.creators}`}>
       <div className="ref-cols">
         <section className="panel ref-left">
           <div>
@@ -63,7 +61,8 @@ export function OverseasReferenceTool() {
             <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="키워드·해시태그·계정 검색" aria-label="키워드 검색" />
           </label>
           <div className="kwlist">
-            {GROUPS.map(({ title, group }) => {
+            {GROUPS.map((group) => {
+              const title = `${group} 타겟`;
               const ks = filtered.filter((x) => x.group === group);
               if (!ks.length) return null;
               return (
@@ -224,6 +223,7 @@ export function OverseasReferenceTool() {
           </section>
         </section>
       </div>
+      </Fold>
     </div>
   );
 }

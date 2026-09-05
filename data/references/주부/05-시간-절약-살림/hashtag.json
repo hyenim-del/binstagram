@@ -1,0 +1,36 @@
+{
+ "query": "#timesavingtips",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "상위가 2.2만 좋아요. 인도계 생활 팁 계정과 텍스트 카드 위주라 해시태그로는 레퍼런스 확보가 어려움. 웹검색 계정 목록을 우선.",
+ "posts": [
+  {
+   "shortcode": "CXPvW6hlKMR",
+   "url": "https://www.instagram.com/p/CXPvW6hlKMR/",
+   "owner": "dailylifehackswith_neha",
+   "metric": "22K 좋아요 (2021)",
+   "desc": "Neha Sharma(인도). 남은 피자 팬에 데우기"
+  },
+  {
+   "shortcode": "DcXihWusn0I",
+   "url": "https://www.instagram.com/p/DcXihWusn0I/",
+   "owner": "ourmemorymap_",
+   "metric": "13K 좋아요",
+   "desc": "토마토 오래 보관하는 법"
+  },
+  {
+   "shortcode": "DLVoVolNxGA",
+   "url": "https://www.instagram.com/p/DLVoVolNxGA/",
+   "owner": "(미확인)",
+   "metric": "1.4K 좋아요",
+   "desc": "미트로프 기름 빼기 팁"
+  },
+  {
+   "shortcode": "DNTVT1PvWMB",
+   "url": "https://www.instagram.com/p/DNTVT1PvWMB/",
+   "owner": "(미확인)",
+   "metric": "146 좋아요",
+   "desc": "\"Top 20 Time-Saving Tips\" 텍스트 카드"
+  }
+ ]
+}

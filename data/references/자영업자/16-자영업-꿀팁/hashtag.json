@@ -1,0 +1,36 @@
+{
+ "query": "#smallbusinesstips",
+ "strength": "mid",
+ "label": "해시태그 보통",
+ "note": "유머 릴스(1인 10역)와 \"top 5 tips\" 나열형이 통함. 나머지는 소규모 코치.",
+ "posts": [
+  {
+   "shortcode": "DbLI_pWKT2H",
+   "url": "https://www.instagram.com/p/DbLI_pWKT2H/",
+   "owner": "_themarketingclub",
+   "metric": "11K 좋아요",
+   "desc": "Catherine Casey 마케팅 코치. \"1 person working 10 jobs\" 유머"
+  },
+  {
+   "shortcode": "DQppZtckq13",
+   "url": "https://www.instagram.com/p/DQppZtckq13/",
+   "owner": "happyandhannahmade",
+   "metric": "2.6K 좋아요 · 285 댓글",
+   "desc": "Hannah Mariona. \"my top 5 tips to start a small business\""
+  },
+  {
+   "shortcode": "DW6diVdDjGw",
+   "url": "https://www.instagram.com/p/DW6diVdDjGw/",
+   "owner": "yaazhyawns_hair_accesories",
+   "metric": "623 좋아요",
+   "desc": "소상공인 아이디어"
+  },
+  {
+   "shortcode": "DblhtGiIx4y",
+   "url": "https://www.instagram.com/p/DblhtGiIx4y/",
+   "owner": "tylertalksbusiness",
+   "metric": "26 좋아요",
+   "desc": ""
+  }
+ ]
+}

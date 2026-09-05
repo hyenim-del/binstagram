@@ -1,0 +1,43 @@
+{
+ "query": "#homehacks",
+ "strength": "strong",
+ "label": "해시태그 강함",
+ "note": "릴스 위주, 상위 게시물 조회 수천만. 유머형 제품 릴스와 청소 인포그래픽이 섞여 있음.",
+ "posts": [
+  {
+   "shortcode": "DZhj5MWkyZs",
+   "url": "https://www.instagram.com/p/DZhj5MWkyZs/",
+   "owner": "(미확인)",
+   "metric": "371K 좋아요 · 5,920만 조회",
+   "desc": "#6 순위 릴스(13초)"
+  },
+  {
+   "shortcode": "DcrMg2ZzNUt",
+   "url": "https://www.instagram.com/p/DcrMg2ZzNUt/",
+   "owner": "fannygutus",
+   "metric": "181K 좋아요 · 1,870만 조회",
+   "desc": "\"DONT show this to your Husband\" 유머형 제품 릴스, comment BELLY 링크 유도"
+  },
+  {
+   "shortcode": "DaklI0mBW3L",
+   "url": "https://www.instagram.com/p/DaklI0mBW3L/",
+   "owner": "homeio_official",
+   "metric": "42K 좋아요 · 580만 조회",
+   "desc": "\"Stop cutting vegetables the slow way\" 주방 가젯 시연 8초"
+  },
+  {
+   "shortcode": "DZm_oRwBHTv",
+   "url": "https://www.instagram.com/p/DZm_oRwBHTv/",
+   "owner": "(미확인)",
+   "metric": "18K 좋아요 · 150만 조회",
+   "desc": "21초 릴스"
+  },
+  {
+   "shortcode": "DZxuqdhgISz",
+   "url": "https://www.instagram.com/p/DZxuqdhgISz/",
+   "owner": "(미확인)",
+   "metric": "1.1K 좋아요",
+   "desc": "청소 요령 인포그래픽 이미지"
+  }
+ ]
+}

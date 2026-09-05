@@ -1,0 +1,29 @@
+{
+ "query": "#savingschallenge",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "기관·소규모 계정, 수백 좋아요. 웹검색의 thebudgetmom·budgetwithmilly 계열이 실제 레퍼런스.",
+ "posts": [
+  {
+   "shortcode": "DZ47DuskR9z",
+   "url": "https://www.instagram.com/p/DZ47DuskR9z/",
+   "owner": "etsy (리포스트)",
+   "metric": "769 좋아요",
+   "desc": "저축 플래너 상품"
+  },
+  {
+   "shortcode": "DK3qbzToU2N",
+   "url": "https://www.instagram.com/p/DK3qbzToU2N/",
+   "owner": "ukristonaufanisi_dtsacco",
+   "metric": "244 좋아요",
+   "desc": "케냐 금융기관, 52주 챌린지"
+  },
+  {
+   "shortcode": "DYffEgAp4HE",
+   "url": "https://www.instagram.com/p/DYffEgAp4HE/",
+   "owner": "jeanettes.journey",
+   "metric": "138 좋아요",
+   "desc": "Cash Stuffing 101"
+  }
+ ]
+}

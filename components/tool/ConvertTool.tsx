@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "@/components/ui/icons";
 import { useToast } from "@/components/ui/Toast";
-import { accountOf, loadDoneJobs } from "@/lib/jobStore";
+import { PICK_SOURCE_KEY, accountOf, loadDoneJobs } from "@/lib/jobStore";
 import { toDisplayTime, toSrt } from "@/lib/srt";
-import { buildStoryboardHtml, captureFrames } from "@/lib/storyboard";
+import type { StoryboardInput } from "@/lib/storyboard";
+import { loadMedia } from "@/lib/mediaStore";
 import { PreviewPlayer } from "@/components/tool/PreviewPlayer";
 import { Combobox } from "@/components/ui/Combobox";
+import { Fold } from "@/components/ui/Fold";
 import type { Job, Segment } from "@/lib/types";
 import {
   ANALYSIS_FIELDS,
@@ -118,7 +120,16 @@ export function ConvertTool() {
   useEffect(() => {
     const done = loadDoneJobs();
     setJobs(done);
-    if (done.length) setSourceId(done[0].id);
+    // 「레퍼런스 대본 확보」의 「이 대본으로 변환」에서 넘어왔으면 그 대본을 원본으로(2026-09-05)
+    let picked: string | null = null;
+    try {
+      picked = sessionStorage.getItem(PICK_SOURCE_KEY);
+      if (picked) sessionStorage.removeItem(PICK_SOURCE_KEY);
+    } catch {
+      /* ignore */
+    }
+    if (picked && done.some((j) => j.id === picked)) setSourceId(picked);
+    else if (done.length) setSourceId(done[0].id);
     else setSourceId("paste");
     try {
       const raw = localStorage.getItem(RESULTS_KEY);
@@ -395,7 +406,8 @@ export function ConvertTool() {
             )}
           </div>
 
-          {/* 2. 분석 */}
+          {/* 2. 분석 — 휴대폰에서는 접어 둔다(생성 시 자동 분석) */}
+          <Fold label={analysis ? "2 · 구조 분석 13항목 보기 · 완료" : "2 · 구조 분석 (선택 — 생성 때 자동으로 해요)"}>
           <div className="card step-card">
             <div className="step-head">
               <span className="step-num">2</span>구조 분석
@@ -425,6 +437,7 @@ export function ConvertTool() {
               </button>
             )}
           </div>
+          </Fold>
 
           {/* 3. 내 주제 */}
           <div className="card step-card">
@@ -470,7 +483,7 @@ export function ConvertTool() {
           <button className={`tab${tab === "results" ? " active" : ""}`} role="tab" aria-selected={tab === "results"} onClick={() => setTab("results")}>
             새 대본 3안<span className="n">{results.length}</span>
           </button>
-          <button className={`tab${tab === "compare" ? " active" : ""}`} role="tab" aria-selected={tab === "compare"} onClick={() => setTab("compare")}>
+          <button className={`tab desktop-only${tab === "compare" ? " active" : ""}`} role="tab" aria-selected={tab === "compare"} onClick={() => setTab("compare")}>
             항목 비교
           </button>
         </div>
@@ -801,6 +814,7 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
   };
   /** PDF 스토리보드 — 새 탭에 챕터별·문장별 장면 캡처가 붙은 인쇄용 페이지를 열고, 브라우저 「인쇄 → PDF로 저장」으로 내보낸다 */
   const [pdfBusy, setPdfBusy] = useState(false);
+  const [cpOpen, setCpOpen] = useState(false); // 휴대폰에서 AI 코파일럿 펼침 여부
   const exportStoryboard = async () => {
     // 탭은 클릭 직후(사용자 동작 안에서) 열어야 팝업 차단에 안 걸린다 — 캡처는 그 뒤에
     const win = window.open("/storyboard", "_blank");
@@ -820,7 +834,8 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
     });
     setPdfBusy(true);
     try {
-      const frames = await captureFrames(res.sourceJobId, lines);
+      // 장면 캡처는 스토리보드 탭이 한다 — 새 탭이 앞에 뜨면 이 탭은 백그라운드가 되어 크롬이 영상 로드를 미루기 때문(2026-09-04)
+      const media = res.sourceJobId ? await loadMedia(res.sourceJobId) : null;
       const job = loadDoneJobs().find((j) => j.id === res.sourceJobId);
       // 레퍼런스 원본 대본과 번역 — 번역은 「원본 대본」 탭이 만든 캐시를 쓰고, 없으면 지금 받아 캐시에 넣는다
       const srcSegs: Segment[] = res.sourceSegments?.length ? res.sourceSegments : job?.segments ?? [];
@@ -844,21 +859,21 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
       }
       const sourceUrl = job?.note?.match(/https?:\/\/\S+/)?.[0] ?? null;
       const topic = res.options.topic.trim();
-      const html = buildStoryboardHtml({
+      const input: StoryboardInput = {
         title: topic ? topic.slice(0, 60) : res.sourceName.replace(/\.[^.]+$/, ""),
         variantLabel: `${v.key}안 ${meta.name}`,
         topic,
         sourceName: res.sourceName.replace(/\.[^.]+$/, ""),
         sourceUrl,
         lines,
-        frames,
+        frames: [], // 스토리보드 탭이 media 로 채운다
         createdAt: Date.now(),
         source: { segments: srcSegs, translations },
         // 구조 설계도(13항목)는 PDF에서 뺐다 — 화면의 「항목 비교」 탭에서 본다(2026-09-04)
-      });
+      };
       await Promise.race([ready, new Promise((r) => setTimeout(r, 10_000))]);
-      win.postMessage({ type: "bsg-storyboard", html }, location.origin);
-      toast(frames.some(Boolean) ? "스토리보드를 새 탭에 열었어요 — 「PDF로 저장」을 누르세요" : "스토리보드를 열었어요 — 이 대본은 영상이 없어 장면 없이 나가요", "ok");
+      win.postMessage({ type: "bsg-storyboard", input, media }, location.origin);
+      toast(media ? "스토리보드를 새 탭에 열었어요 — 장면을 붙인 뒤 「PDF로 저장」을 누르세요" : "스토리보드를 열었어요 — 이 대본은 영상이 없어 장면 없이 나가요", "ok");
     } catch (e) {
       win.close();
       toast(e instanceof Error ? e.message : "스토리보드를 만들지 못했어요", "error");
@@ -979,6 +994,7 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
               </b>{" "}
               <span className={total <= target + 0.5 ? "ok" : "warn"}>{total <= target + 0.5 ? `목표 ${target}초 안` : `목표 ${target}초보다 ${Math.round(total - target)}초 김`}</span>
             </div>
+            <Fold label="시간 압축 · 피드백 (선택)">
             <div className="ed-tools">
               <div className="compress">
                 <div className="compress-head">
@@ -1011,6 +1027,7 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
                 {fbBusy ? "검사 중…" : "피드백 받기"}
               </button>
             </div>
+            </Fold>
           </div>
 
           <div className="ed-foot">
@@ -1031,7 +1048,11 @@ function ScriptEditor({ res, v, update, onReselect }: { res: ConvertResult; v: V
           </div>
         </div>
 
-        <div className="copilot">
+        <button type="button" className="fold-btn mobile-only" onClick={() => setCpOpen((o) => !o)} aria-expanded={cpOpen}>
+          <span>AI 코파일럿으로 고치기 (선택)</span>
+          <Icon.Chev size={16} style={{ transform: cpOpen ? "rotate(180deg)" : undefined }} />
+        </button>
+        <div className={`copilot${cpOpen ? "" : " mobile-hidden"}`}>
           <div className="cp-head">
             <b>AI 코파일럿</b>
             <span className="tiny muted">수정 · 피드백 · 시간 압축</span>

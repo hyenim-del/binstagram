@@ -29,11 +29,21 @@ export type StoryboardInput = {
 const THUMB_W = 360;
 
 /** 문장 가운데 시각을 원본 영상 시각으로 비례 변환해 장면을 캡처한다. 영상이 없거나(붙여넣은 대본·오디오) 실패하면 null */
+/** 장면 캡처용 영상 로드 대기 한도 */
+const LOAD_TIMEOUT_MS = 8000;
+
 export async function captureFrames(jobId: string | null, lines: NewLine[]): Promise<(string | null)[]> {
+  if (!jobId || !lines.length) return lines.map(() => null);
+  return captureFramesFromBlob(await loadMedia(jobId), lines);
+}
+
+/**
+ * 영상 blob 에서 직접 장면을 캡처한다. 크롬은 보이지 않는(백그라운드) 탭의 영상 로드를 미루므로,
+ * 캡처는 반드시 앞에 떠 있는 탭에서 해야 한다 — 스토리보드 탭이 자기 문서를 만들 때 이 함수를 쓴다(2026-09-04).
+ */
+export async function captureFramesFromBlob(blob: Blob | null, lines: NewLine[]): Promise<(string | null)[]> {
   const none = lines.map(() => null);
-  if (!jobId || !lines.length) return none;
-  const blob = await loadMedia(jobId);
-  if (!blob || !blob.type.startsWith("video")) return none;
+  if (!blob || !lines.length || !blob.type.startsWith("video")) return none;
 
   const url = URL.createObjectURL(blob);
   const video = document.createElement("video");
@@ -42,9 +52,17 @@ export async function captureFrames(jobId: string | null, lines: NewLine[]): Pro
   video.preload = "auto";
   video.src = url;
   try {
+    // 영상이 끝내 안 열리면(탭이 백그라운드라 로드가 미뤄지거나, 코덱 문제) 장면 없이 내보낸다 — 무한 대기 방지(2026-09-04)
     await new Promise<void>((resolve, reject) => {
-      video.onloadeddata = () => resolve();
-      video.onerror = () => reject(new Error("video load failed"));
+      const timer = setTimeout(() => reject(new Error("video load timeout")), LOAD_TIMEOUT_MS);
+      video.onloadeddata = () => {
+        clearTimeout(timer);
+        resolve();
+      };
+      video.onerror = () => {
+        clearTimeout(timer);
+        reject(new Error("video load failed"));
+      };
     });
     if (!video.videoWidth || !isFinite(video.duration) || video.duration <= 0) return none;
 

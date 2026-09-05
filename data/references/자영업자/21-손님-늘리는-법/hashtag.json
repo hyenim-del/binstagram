@@ -1,0 +1,15 @@
+{
+ "query": "#attractcustomers",
+ "strength": "spam",
+ "label": "스팸 위주",
+ "note": "타로·시길·에이전시 스팸. 유일한 참고는 브랜딩 vs 마케팅 vs 세일즈 인포그래픽.",
+ "posts": [
+  {
+   "shortcode": "DZpLjmqSZsJ",
+   "url": "https://www.instagram.com/p/DZpLjmqSZsJ/",
+   "owner": "kenny.kenray",
+   "metric": "5.1K 좋아요",
+   "desc": "Kenny Song 브랜드 디자이너. branding/marketing/selling 구분 인포"
+  }
+ ]
+}

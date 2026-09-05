@@ -1,0 +1,22 @@
+{
+ "query": "#smallbusinessfails",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "소규모 개인의 실패 공유(수십 좋아요). 실패담 포맷은 웹검색(hormozi, thelazyceo, sarablakely) 참고.",
+ "posts": [
+  {
+   "shortcode": "Cs3H8FpNeNB",
+   "url": "https://www.instagram.com/p/Cs3H8FpNeNB/",
+   "owner": "favoritepostcard_com",
+   "metric": "81 좋아요",
+   "desc": "\"Let's talk about EPIC FAILS\""
+  },
+  {
+   "shortcode": "DO8RVU-CVia",
+   "url": "https://www.instagram.com/p/DO8RVU-CVia/",
+   "owner": "webmomster",
+   "metric": "11 좋아요",
+   "desc": "Alida Lee. 실패를 축하하는 이유"
+  }
+ ]
+}

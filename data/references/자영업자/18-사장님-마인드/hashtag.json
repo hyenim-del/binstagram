@@ -1,0 +1,29 @@
+{
+ "query": "#entrepreneurmindset",
+ "strength": "mid",
+ "label": "해시태그 보통",
+ "note": "명언 카드 위주. 예외적으로 일러스트 작가의 스토리형 캐러셀이 4.8만.",
+ "posts": [
+  {
+   "shortcode": "DbifZvVs_-t",
+   "url": "https://www.instagram.com/p/DbifZvVs_-t/",
+   "owner": "linesbyloes",
+   "metric": "48K 좋아요",
+   "desc": "일러스트 작가. \"Say these 2 words and get yourself out there\""
+  },
+  {
+   "shortcode": "DAONReyzHWv",
+   "url": "https://www.instagram.com/p/DAONReyzHWv/",
+   "owner": "aided.co",
+   "metric": "3K 좋아요",
+   "desc": "큐레이션 계정 명언"
+  },
+  {
+   "shortcode": "DX2GhTZDywP",
+   "url": "https://www.instagram.com/p/DX2GhTZDywP/",
+   "owner": "millionairecodess",
+   "metric": "-",
+   "desc": "인도 명언 계정"
+  }
+ ]
+}

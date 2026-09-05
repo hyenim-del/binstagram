@@ -21,7 +21,7 @@ OpenAI 계정에 **결제 크레딧**이 있어야 대본이 나옵니다 (없�
 app/
   layout.tsx                  상단바 + 사이드바 셸, 토스트
   page.tsx                    → /reference-script 리다이렉트
-  overseas-reference/page.tsx 해외 레퍼런스 찾기 (상단 링크로 찾기 입력 + 키워드 30개별 해외 계정·해시태그 상위 게시물)
+  overseas-reference/page.tsx 해외 레퍼런스 찾기 (상단 링크로 찾기 입력 + 키워드별 해외 계정·해시태그 상위 게시물; 그룹 탭은 data/references/ 폴더에서 자동 생성)
   reference-script/page.tsx   대본 추출 화면
   steps/page.tsx              「순서」 안내
   api/transcribe/route.ts     서버: 파일 → Whisper(verbose_json, segment 타임스탬프) → 화자 추정 → 다듬기 → JSON
@@ -32,8 +32,10 @@ components/
   ui/     Toast · icons
 lib/
   types.ts · srt.ts(SRT/표시용 시간 변환) · nav.ts
-  references.json · references.ts   해외 레퍼런스 데이터(2026-09-02 조사, 키워드 30·계정 166·게시물 99) — research/build_data.py 로 재생성
-research/                     조사 원자료(websearch_kw*.md, ig_grid_raw.txt), REPORT.md, build_report.py · build_data.py · build_mockup.py
+  references.json · references.ts   해외 레퍼런스 데이터(2026-09-02 조사, 키워드 30·계정 166·게시물 99) — data/references/ 폴더를 `npm run refs:merge` 로 합친 생성물(직접 고치지 말 것)
+data/references/              해외 레퍼런스 데이터 원본 — <그룹>/<번호>-<키워드>/{meta,hashtag,creators}.json (자세한 건 data/references/README.md)
+scripts/refs.mjs              data/references ↔ lib/references.json 변환(split · merge · check · import); dev/build 앞에서 merge 자동 실행. `npm run refs:import` 는 ~/Documents/Hun/mecro 매크로의 .csv 를 키워드별 creators.json 에 넣음
+research/                     조사 원자료(websearch_kw*.md, ig_grid_raw.txt), REPORT.md, build_report.py · build_data.py(원자료→references.json 최초 생성용) · build_mockup.py
 design/mockup/                1단계 목업 소스 (node build-mockup.mjs 로 재생성)
 ```
 

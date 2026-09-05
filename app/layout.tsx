@@ -1,14 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { TopBar } from "@/components/shell/TopBar";
 import { Sidebar } from "@/components/shell/Sidebar";
+import { MobileSteps } from "@/components/shell/MobileSteps";
 import { ToastProvider } from "@/components/ui/Toast";
 
 export const metadata: Metadata = {
   title: "BinStaGram",
   description: "레퍼런스 영상의 음성을 글로 변환해 타임코드 대본을 만듭니다.",
 };
+
+/** 휴대폰 하단 바가 홈 인디케이터 영역까지 내려가도록 */
+export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover" };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -28,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Sidebar />
               <main className="workspace">{children}</main>
             </div>
+            <MobileSteps />
           </div>
         </ToastProvider>
       </body>

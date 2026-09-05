@@ -1,0 +1,7 @@
+{
+ "query": "#instagramgrowth",
+ "strength": "none",
+ "label": "해시태그 미조사",
+ "note": "매크로(config_monetization.yaml) 수집용으로 추가한 키워드. 해시태그 상위 게시물은 아직 직접 조사하지 않음.",
+ "posts": []
+}

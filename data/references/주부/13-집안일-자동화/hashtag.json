@@ -1,0 +1,29 @@
+{
+ "query": "#smarthomehacks",
+ "strength": "weak",
+ "label": "해시태그 약함",
+ "note": "인도 가젯 리뷰·드롭쉬핑 계정 위주. 자동화 크리에이터는 웹검색(brett.tech_ 등) 참고.",
+ "posts": [
+  {
+   "shortcode": "DXweHpnP3oW",
+   "url": "https://www.instagram.com/p/DXweHpnP3oW/",
+   "owner": "reviewsetu",
+   "metric": "21K 좋아요 · 1.5K 댓글",
+   "desc": "힌디 가젯 리뷰(탄성 침대시트)"
+  },
+  {
+   "shortcode": "DX084UVxApL",
+   "url": "https://www.instagram.com/p/DX084UVxApL/",
+   "owner": "nextgen_gadget",
+   "metric": "10K 좋아요 · 11K 댓글",
+   "desc": "롤러 블라인드"
+  },
+  {
+   "shortcode": "DQAEWtHDSRJ",
+   "url": "https://www.instagram.com/p/DQAEWtHDSRJ/",
+   "owner": "home_garden_and_diy",
+   "metric": "1.7K 좋아요",
+   "desc": "스위치 아이디어"
+  }
+ ]
+}

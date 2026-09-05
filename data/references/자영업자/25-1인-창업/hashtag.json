@@ -1,0 +1,36 @@
+{
+ "query": "#solopreneur",
+ "strength": "mid",
+ "label": "해시태그 보통",
+ "note": "\"스택 공개\"·\"one-person business\" 프레임 릴스. 텍스트온스크린 + 담담한 톤.",
+ "posts": [
+  {
+   "shortcode": "DYVrkfXsjDC",
+   "url": "https://www.instagram.com/p/DYVrkfXsjDC/",
+   "owner": "liambuilds.ai",
+   "metric": "37K 좋아요",
+   "desc": "Liam Haley. \"Days stack. Work compounds.\""
+  },
+  {
+   "shortcode": "DLKz1ZVRagP",
+   "url": "https://www.instagram.com/p/DLKz1ZVRagP/",
+   "owner": "iampascio",
+   "metric": "1.9K 좋아요 · 126 댓글",
+   "desc": "Pascio. \"5 apps. No office. No team.\" 소프트웨어 스택 공개"
+  },
+  {
+   "shortcode": "DTDtKu-Eaa7",
+   "url": "https://www.instagram.com/p/DTDtKu-Eaa7/",
+   "owner": "nextmovenick",
+   "metric": "408 좋아요",
+   "desc": "Nick DiFrancesco. \"one-person business in 2026\""
+  },
+  {
+   "shortcode": "DU8U4EICHGE",
+   "url": "https://www.instagram.com/p/DU8U4EICHGE/",
+   "owner": "business__infographics",
+   "metric": "-",
+   "desc": "인포그래픽 큐레이션"
+  }
+ ]
+}

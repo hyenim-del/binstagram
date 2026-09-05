@@ -1,0 +1,43 @@
+{
+ "query": "#momfinds",
+ "strength": "strong",
+ "label": "해시태그 강함",
+ "note": "아마존 제휴형 릴스. \"Follow + comment 키워드\" DM 링크 유도가 표준 CTA.",
+ "posts": [
+  {
+   "shortcode": "DZNaX_eRb8f",
+   "url": "https://www.instagram.com/p/DZNaX_eRb8f/",
+   "owner": "lena.bostonn",
+   "metric": "290K 좋아요",
+   "desc": "Lena Boston. 수영장·목욕 아기템, comment BABY"
+  },
+  {
+   "shortcode": "DZq7AxBOd5r",
+   "url": "https://www.instagram.com/p/DZq7AxBOd5r/",
+   "owner": "malloryleerichardson",
+   "metric": "180K 좋아요 · 7.5K 댓글",
+   "desc": "Mallory Lee(댈러스). 스퀴시 장난감"
+  },
+  {
+   "shortcode": "Da5ZVzyR5QL",
+   "url": "https://www.instagram.com/p/Da5ZVzyR5QL/",
+   "owner": "inmygoodkarma",
+   "metric": "99K 좋아요",
+   "desc": "성장형 자전거"
+  },
+  {
+   "shortcode": "DcoakIOAtO5",
+   "url": "https://www.instagram.com/p/DcoakIOAtO5/",
+   "owner": "meganlbrown22",
+   "metric": "44K 좋아요",
+   "desc": "Megan Brown. 아이 인터랙티브 북 하울, comment SHOP"
+  },
+  {
+   "shortcode": "DcYdAbGHPe3",
+   "url": "https://www.instagram.com/p/DcYdAbGHPe3/",
+   "owner": "findsworththebuy",
+   "metric": "39K 좋아요",
+   "desc": "Sarah Roy. 크리스마스 장난감 예측"
+  }
+ ]
+}

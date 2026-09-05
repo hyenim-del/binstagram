@@ -1,0 +1,17 @@
+{
+ "_설명": "매크로(insta-research) 결과 가져오기 설정. sources = .csv 를 읽을 폴더(프로젝트 기준 상대경로). map = 발견 경로(해시태그·키워드) → 키워드 id 또는 키워드 이름. tags/hashtag.query 와 같은 검색어는 map 없이도 자동 배정됩니다.",
+ "sources": ["../mecro/output", "data/inbox"],
+ "skip": ["influencers.csv"],
+ "map": {
+  "smallbusinessowner": 22,
+  "smallbusinesstips": 16,
+  "restaurantmarketing": 20,
+  "small business marketing": 20,
+  "local business tips": 16,
+  "instagramgrowth": 31,
+  "contentcreatortips": 31,
+  "digitalproducts": 31,
+  "instagram growth": 31,
+  "faceless instagram": 31
+ }
+}
