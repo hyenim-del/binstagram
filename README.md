@@ -1,5 +1,7 @@
 # BinStaGram — 레퍼런스 대본 확보
 
+> 처음 오셨다면 **[사용 설명서(GUIDE.md)](GUIDE.md)** 를 먼저 읽어 주세요. 앱 안의 「사용 설명서」 메뉴와 같은 내용입니다.
+
 레퍼런스 영상(릴스·쇼츠)의 **음성을 글로 변환**해 타임코드가 붙은 대본을 만들고, 영상 위에 자막으로 확인·SRT로 저장하는 도구.
 음성 인식은 OpenAI Whisper(`whisper-1`), 선택 입력 "다듬기 지시"는 `gpt-4o-mini`가 적용합니다.
 
@@ -23,7 +25,7 @@ app/
   page.tsx                    → /reference-script 리다이렉트
   overseas-reference/page.tsx 해외 레퍼런스 찾기 (상단 링크로 찾기 입력 + 키워드별 해외 계정·해시태그 상위 게시물; 그룹 탭은 data/references/ 폴더에서 자동 생성)
   reference-script/page.tsx   대본 추출 화면
-  steps/page.tsx              「순서」 안내
+  steps/page.tsx              「사용 설명서」(처음 온 사람용 안내 · 홈 / 이 페이지로 이동)
   api/transcribe/route.ts     서버: 파일 → Whisper(verbose_json, segment 타임스탬프) → 화자 추정 → 다듬기 → JSON
 components/
   shell/  TopBar · Sidebar

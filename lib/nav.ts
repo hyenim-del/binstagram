@@ -2,7 +2,7 @@ export type NavItem = { href: string; label: string; icon: "steps" | "globe" | "
 export type NavGroup = { title?: string; items: NavItem[] };
 
 export const NAV: NavGroup[] = [
-  { items: [{ href: "/steps", label: "순서", icon: "steps" }] },
+  { items: [{ href: "/steps", label: "사용 설명서", icon: "steps" }] },
   {
     title: "제작 도구",
     items: [

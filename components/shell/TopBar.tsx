@@ -14,6 +14,9 @@ export function TopBar() {
         <span className="brand-name">BinStaGram</span>
       </Link>
       <div className="topbar-actions">
+        <Link href="/steps" className="help-link" title="처음 오셨다면 사용 설명서">
+          설명서
+        </Link>
         <span className="avatar" aria-label="프로필">
           h
         </span>
